@@ -1,9 +1,12 @@
 import "./style.css";
-import LuckyLogo from './images/LuckyLogo.webp'
+import { burgerimg } from "./home.js";
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navigation = document.getElementsByClassName('navigation')[0];
-
-toggleButton.addEventListener("click", () => {
-    navigation.classList.toggle('active')
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navigation = document.getElementsByClassName('navigation')[0];
+    
+    toggleButton.addEventListener("click", () => {
+        navigation.classList.toggle('active')
+    })
 })
+

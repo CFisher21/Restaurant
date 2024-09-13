@@ -112,11 +112,6 @@ h2 {
     padding: 32px;
 }
 
-.navigation.active {
-    display: flex
-}
-
-
 @media (max-width: 600px) {
 
     .bar {
@@ -143,11 +138,16 @@ h2 {
     }
 
     .navigation {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
+    .active {
+        display: none;
+    }
+    
 
     .header-logo {
         height: 60px;

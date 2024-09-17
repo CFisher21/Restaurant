@@ -1,12 +1,18 @@
 import "./style.css";
-import { burgerimg } from "./home.js";
+import { burgerimg, slogancontainer, merch } from "./home.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementsByClassName('toggle-button')[0];
-    const navigation = document.getElementsByClassName('navigation')[0];
+    const navigation = document.getElementsByClassName('navigation')[0];    
+    const content = document.getElementById('content');
     
     toggleButton.addEventListener("click", () => {
         navigation.classList.toggle('active')
     })
+
+    content.appendChild(burgerimg)
+    content.appendChild(slogancontainer)
+    content.appendChild(merch)
+
 })
 

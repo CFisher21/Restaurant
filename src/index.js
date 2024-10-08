@@ -1,6 +1,7 @@
 import "./style.css";
 import { burgerimg, slogancontainer, merch } from "./home.js";
 import menu from "./menu.js"; 
+import {aboutRow, headingrow} from "./about.js"
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -22,8 +23,31 @@ document.addEventListener('DOMContentLoaded', () => {
     function Menu() {
         content.appendChild(menu)
     }
+
+    function About() {
+        content.appendChild(headingrow)
+        content.appendChild(aboutRow)
+    }
     
     Home();
+
+    const homeNav = document.getElementById('home');
+    const menuNav = document.getElementById('menu');
+    const aboutNav = document.getElementById('about');
+
+    homeNav.addEventListener('click', () => {
+        content.innerHTML = "";
+        Home();
+    })
+
+    menuNav.addEventListener('click', () => {
+        content.innerHTML = "";
+        Menu();
+    })
+    aboutNav.addEventListener('click', () => {
+        content.innerHTML = "";
+        About();
+    })
 
 })
 

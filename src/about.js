@@ -6,7 +6,7 @@ headingrow.className = "heading-row";
 
 const Logo = document.createElement('img');
 Logo.src = LuckyLogo;
-Logo.className = "LuckyLogo2";
+Logo.className = "LuckyLogo3";
 Logo.alt = "LuckyLogo";
 
 const aboutHeading = document.createElement('h1');

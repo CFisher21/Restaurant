@@ -1,5 +1,6 @@
 import "./style.css";
 import { burgerimg, slogancontainer, merch } from "./home.js";
+import menu from "./menu.js"; 
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -10,9 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
         navigation.classList.toggle('active')
     })
 
-    content.appendChild(burgerimg)
-    content.appendChild(slogancontainer)
-    content.appendChild(merch)
+    function Home() {
+
+        content.appendChild(burgerimg)
+        content.appendChild(slogancontainer)
+        content.appendChild(merch)
+
+    }
+
+    function Menu() {
+        content.appendChild(menu)
+    }
+    
+    Home();
 
 })
 

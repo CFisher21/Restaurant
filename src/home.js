@@ -1,18 +1,31 @@
-import burger from "./images/burger.webp"
+import RestView from "./images/LuckyBurgerRest.webp"
 import sweaterimg from "./images/sweater.webp"
 import hatimg from "./images/hat.webp"
 import tshirtimg from "./images/tshirt.webp"
 import keychainimg from "./images/keychain.webp"
+import LuckyLogoPic from "./images/LuckyLogo.webp"
 
 const burgerimg  = document.createElement('img');
 
-burgerimg.src = burger;
+burgerimg.src = RestView;
 burgerimg.alt = "Burger";
-burgerimg.className = 'burger-photo';
+burgerimg.className = 'main-photo';
 
 const slogancontainer = document.createElement('div');
 
 slogancontainer.className = 'slogan-container'
+
+const seperate = document.createElement('div')
+
+seperate.className = 'seperate'
+
+const LuckyLogo = document.createElement('img');
+
+LuckyLogo.src = LuckyLogoPic;
+LuckyLogo.alt = "Lucky Logo"
+LuckyLogo.className = "LuckyLogo"
+
+slogancontainer.appendChild(LuckyLogo);
 
 const slogan = document.createElement('h1');
 const slogan2 = document.createElement('h1');
@@ -27,9 +40,11 @@ slogan2.textContent = "Where Every Burger's a Jackpot!"
 slogan3.className = "slogan3"
 slogan3.textContent = "High Quality, Where Every Burger is Made to Perfection"
 
-slogancontainer.appendChild(slogan);
-slogancontainer.appendChild(slogan2);
-slogancontainer.appendChild(slogan3);
+seperate.appendChild(slogan);
+seperate.appendChild(slogan2);
+seperate.appendChild(slogan3);
+
+slogancontainer.appendChild(seperate)
 
 const merch = document.createElement('div');
 

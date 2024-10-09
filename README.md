@@ -27,5 +27,6 @@ This project represents a homepage for **Lucky's Burgers**, a fast food restaura
 - HTML5
 - CSS3 (Flexbox, Media Queries)
 - JavaScript (ES6 Modules)
-- Webpack (if using)
+- Webpack
 - Google Fonts
+- Node.JS
